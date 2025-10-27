@@ -18,16 +18,30 @@ export default function Layout({ children }) {
             <span className="font-semibold text-xl tracking-tight">{SITE.name}</span>
           </Link>
           <nav className="ml-auto flex items-center gap-1">
-            <Nav to="/" label="Home" />
-            <Nav to="/research" label="Research" />
-            <Nav to="/resume" label="Resume" />
-
+            <a
+              href="https://matthewn.me"
+              className="text-gray-700 hover:text-blue-600 px-3 py-2"
+            >
+              Home
+            </a>
+            <a
+              href="https://matthewn.me/research"
+              className="text-gray-700 hover:text-blue-600 px-3 py-2"
+            >
+              Research
+            </a>
+            <a
+              href="https://matthewn.me/resume"
+              className="text-gray-700 hover:text-blue-600 px-3 py-2"
+            >
+              Resume
+            </a>
             <a
               href="https://matthewn.me/projects"
               className="text-gray-700 hover:text-blue-600 px-3 py-2"
-           >
-             Projects
-           </a>
+            >
+              Projects
+            </a>
           </nav>
         </div>
       </header>
